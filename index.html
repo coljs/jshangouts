@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BogotaJS</title>
+	<meta name="description" content="Hangouts sobre Javascript proveídos por BogotaJS">
+	<meta property="og:image" content="static/img/logo.png">
+	<meta property="og:site_name" content="BogotaJS">
+	<meta property="og:description" content="Hangouts sobre Javascript proveídos por BogotaJS">
+	<!-- >> Typekit -->
+	<script type="text/javascript" src="//use.typekit.net/imm7lvg.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<!-- << Typekit -->
+	<!-- >> Google Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<!-- << Google Fonts -->
+	<!-- >> Styles -->
+	<link href="{{STATIC_URL}}landing/css/main.css" rel="stylesheet" type="text/css">
+	<!-- << Styles -->
+	<!-- >> Head Scripts -->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="{{STATIC_URL}}landing/js/html5shiver.min.js"></script>
+	<![endif]-->
+	<!-- << Head Scripts -->
+</head>
+<body>
+	{% block header %}
+		{% include "landing/header.html" %}
+	{% endblock %}
+	{% block body %}{% endblock %}
+	{% block footer %}
+		{% include "landing/footer.html" %}
+	{% endblock %}
+	{% block scripts %}{% endblock %}
+</body>
+{% endwith %}</html>
