@@ -255,7 +255,7 @@ header h2 {
 .comming_soon {
   max-width: 760px;
   margin: auto;
-  background: url(/res/img/noise.gif);
+  background: url(../img/noise.gif);
   color: white;
   text-align: center;
   font-size: 2.5em;
