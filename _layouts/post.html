@@ -4,20 +4,20 @@ layout: default
 <div class="non-semantic-protector">
 	<h2 class="ribbon">
 		<div class="ribbon-content">
-			<span class="icon">H</span> <span class="title">{% assign first_post = site.posts.first %}{{ first_post.title }} feat. {{ first_post.feat }}</span>
+			<span class="icon">H</span> <span class="title">{{ page.title }} feat. {{ page.feat }}</span>
 		</div>
 	</h2>
 </div>
 <div class="hangout">
-	<iframe width="760" height="428" src="http://www.youtube.com/embed/{{ first_post.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+	<iframe width="760" height="428" src="http://www.youtube.com/embed/{{ page.youtube_id }}" frameborder="0" allowfullscreen></iframe>
 </div>
 <div class="info">
 	<div class="about">
 		<h3>Introducción</h3>
-		{{ first_post.description }}
+		{{ page.description }}
 	</div>
 	<div class="featuring">
 		<h3>Invitado</h3>
-		{{ first_post.bio }}
+		{{ page.bio }}
 	</div>
 </div>

@@ -1,44 +1,66 @@
 ---
 layout: default
 title: Hangouts de Javascript
+
+next_title: JS para Gráficos y Visualización de Datos
+next_feat: Nicolás Garcia Belmonte
+next_date: 2012-08-19
+next_categories: [data-visualization, twitter, philogl]
+next_description: "En este hangout, Nicolás presentará las tecnologías Web que usa y cómo las combina para crear visualizaciones de datos. Hablará sobre tecnologías como el 2D Canvas, WebGL, ES5, XHR2 y otras. También presentará dos librerías de las que es autor: el JavaScript InfoVis Toolkit y PhiloGL."
+next_bio: Nicolás trabaja como Data Visualization Scientist en Twitter y es el creador de populares librerías de visualización de datos como PhiloGL y Javascript InfoVis Toolkit.
+next_url: 
 ---
 
+{% if page.next_url == null %}
 <div class="non-semantic-protector">
-	<div class="ribbon">
+	<div class="ribbon live">
 		<div class="ribbon-content title">Próximamente
 		</div>
 	</div>
 </div>
 <div class="comming_soon">
 	<div class="inner">
-		<h2>Engine.IO &amp; Socket.IO</h2>
+		<h2>{{ page.next_title }}</h2>
 		<p class="feat"> - feat - </p>
-		<h3>Guillermo Rauch</h3>
-		<time class="date" datetime="2012-08-19">19 de Agosto de 2012</time>
+		<h3>{{ page.next_feat }}</h3>
+		<time class="date" datetime="{{ page.next_date }}">{{ page.next_date | date_to_string }}</time>
 	</div>
-</div>
-
-<div class="non-semantic-protector">
-	<h2 class="ribbon live">
-		<div class="ribbon-content">
-			<span class="icon rec">&#x5e;</span> <span class="title">En Vivo: Engine.IO &amp; Socket.IO feat. Guillermo Rauch</span>
-		</div>
-	</h2>
-</div>
-<div class="hangout">
-	<iframe width="760" height="428" src="http://www.youtube.com/embed/e3FdQAiG3-o" frameborder="0" allowfullscreen></iframe>
 </div>
 <div class="info">
 	<div class="about">
 		<h3>Introducción</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est.</p>
+		<p>{{ page.next_description }}</p>
 	</div>
 	<div class="featuring">
 		<h3>Invitado</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est.</p>
+		<p>{{ page.next_bio }}</p>
 	</div>
 </div>
 
+{% else %}
+<div class="non-semantic-protector">
+	<h2 class="ribbon live">
+		<div class="ribbon-content">
+			<span class="icon rec">&#x5e;</span> <span class="title">En Vivo: {{ page.next_title }}</span>
+		</div>
+	</h2>
+</div>
+<div class="hangout">
+	<iframe width="760" height="428" src="http://www.youtube.com/embed/{{ page.next_url }}" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="info">
+	<div class="about">
+		<h3>Introducción</h3>
+		<p>{{ page.next_description }}</p>
+	</div>
+	<div class="featuring">
+		<h3>Invitado</h3>
+		<p>{{ page.next_bio }}</p>
+	</div>
+</div>
+{% endif %}
+
+{% if page.next_url == null %}
 <div class="non-semantic-protector">
 	<h2 class="ribbon">
 		<div class="ribbon-content">
@@ -59,6 +81,7 @@ title: Hangouts de Javascript
 		<p>{{ first_post.bio }}</p>
 	</div>
 </div>
+{% endif %}
 {% comment %}
 
 {% endcomment %}

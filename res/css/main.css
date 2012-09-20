@@ -113,45 +113,45 @@ header {
 /* line 22, src/_default.scss */
 header a {
   text-decoration: none;
-  -webkit-transition: text-shadow 400ms;
 }
-/* line 26, src/_default.scss */
-header a:hover {
-  -webkit-transition: text-shadow 400ms;
-  text-shadow: 0 2px 20px rgba(255, 255, 255, 0.3);
-}
-/* line 31, src/_default.scss */
+/* line 25, src/_default.scss */
 header hgroup {
-  font-size: 6.5em;
+  font-size: 7em;
 }
-/* line 34, src/_default.scss */
+/* line 28, src/_default.scss */
 header h1 {
   font-family: franchise;
   text-transform: uppercase;
   color: #20a8dd;
-  display: inline;
   color: #eee;
+  text-shadow: 3px 0px #979797;
 }
-/* line 41, src/_default.scss */
+/* line 36, src/_default.scss */
 header h1 .gray {
   color: #888888;
 }
-/* line 45, src/_default.scss */
+/* line 40, src/_default.scss */
 header h2 {
-  display: inline;
   font-family: Great Vibes;
-  color: #bbb;
-  font-size: 0.75em;
+  color: #999471;
+  font-size: 0.65em;
+  margin: -0.1em 0 0.9em;
+  -webkit-transition: text-shadow 400ms;
+  text-shadow: 0 2px 20px rgba(255, 255, 255, 0.3);
+}
+/* line 49, src/_default.scss */
+header h2:hover {
+  -webkit-transition: text-shadow 400ms;
 }
 
-/* line 53, src/_default.scss */
+/* line 55, src/_default.scss */
 .non-semantic-protector {
   position: relative;
   z-index: 1;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 3px 5px);
 }
 
-/* line 58, src/_default.scss */
+/* line 60, src/_default.scss */
 .ribbon {
   font-size: 2.3em;
   font-family: Yanone Kaffeesatz;
@@ -167,36 +167,36 @@ header h2 {
   margin: 1.5em auto 0;
   /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
-/* line 72, src/_default.scss */
+/* line 74, src/_default.scss */
 .ribbon .title {
   text-transform: uppercase;
 }
-/* line 75, src/_default.scss */
+/* line 77, src/_default.scss */
 .ribbon .icon {
   margin-right: 0.5em;
 }
-/* line 79, src/_default.scss */
+/* line 81, src/_default.scss */
 .ribbon:before, .ribbon:after {
   content: "";
   position: absolute;
   display: block;
   bottom: -0.98em;
-  border: 1.1em solid #9c2020;
+  border: 0.9em solid #9c2020;
   z-index: -1;
 }
-/* line 88, src/_default.scss */
+/* line 90, src/_default.scss */
 .ribbon:before {
-  left: -1.62em;
+  left: -1.42em;
   border-right-width: 1.5em;
   border-left-color: transparent;
 }
-/* line 93, src/_default.scss */
+/* line 95, src/_default.scss */
 .ribbon:after {
-  right: -1.62em;
+  right: -1.42em;
   border-left-width: 1.5em;
   border-right-color: transparent;
 }
-/* line 98, src/_default.scss */
+/* line 100, src/_default.scss */
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
   content: "";
   position: absolute;
@@ -205,45 +205,45 @@ header h2 {
   border-color: maroon transparent transparent transparent;
   bottom: -0.98em;
 }
-/* line 106, src/_default.scss */
+/* line 108, src/_default.scss */
 .ribbon .ribbon-content:before {
   left: 0;
   border-width: 1em 0 0 1em;
 }
-/* line 110, src/_default.scss */
+/* line 112, src/_default.scss */
 .ribbon .ribbon-content:after {
   right: 0;
   border-width: 1em 1em 0 0;
 }
 
-/* line 116, src/_default.scss */
+/* line 118, src/_default.scss */
 .live {
   background: -webkit-radial-gradient(#eb9d15, #af750f);
 }
-/* line 119, src/_default.scss */
+/* line 121, src/_default.scss */
 .live .icon {
   color: #be2727;
   text-shadow: 0 0 5px maroon;
   font-size: 0.8em;
 }
-/* line 124, src/_default.scss */
+/* line 126, src/_default.scss */
 .live:before, .live:after {
   border-color: #c68411;
 }
-/* line 128, src/_default.scss */
+/* line 130, src/_default.scss */
 .live:before {
   border-left-color: transparent;
 }
-/* line 131, src/_default.scss */
+/* line 133, src/_default.scss */
 .live:after {
   border-right-color: transparent;
 }
-/* line 134, src/_default.scss */
+/* line 136, src/_default.scss */
 .live .ribbon-content:before, .live .ribbon-content:after {
   border-color: #965f00 transparent transparent transparent;
 }
 
-/* line 139, src/_default.scss */
+/* line 141, src/_default.scss */
 .hangout {
   background: black;
   width: 760px;
@@ -251,7 +251,7 @@ header h2 {
   min-height: 400px;
 }
 
-/* line 146, src/_default.scss */
+/* line 148, src/_default.scss */
 .comming_soon {
   max-width: 760px;
   margin: auto;
@@ -264,30 +264,30 @@ header h2 {
   text-transform: uppercase;
   border-radius: 0 0 10px 10px;
 }
-/* line 158, src/_default.scss */
+/* line 160, src/_default.scss */
 .comming_soon .inner {
   padding: 1em;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 0 0 10px 10px;
 }
-/* line 163, src/_default.scss */
+/* line 165, src/_default.scss */
 .comming_soon h2 {
   font-weight: bold;
 }
-/* line 166, src/_default.scss */
+/* line 168, src/_default.scss */
 .comming_soon .feat {
   font-family: Great Vibes;
   text-transform: lowercase;
   font-size: 0.7em;
   margin: 0.5em 0;
 }
-/* line 172, src/_default.scss */
+/* line 174, src/_default.scss */
 .comming_soon h3 {
   font-size: 0.8em;
   font-family: Great Vibes;
   text-transform: capitalize;
 }
-/* line 177, src/_default.scss */
+/* line 179, src/_default.scss */
 .comming_soon .date {
   font-family: Droid Sans, sans-serif;
   font-size: 0.3em;
@@ -296,7 +296,7 @@ header h2 {
   font-weight: 300;
 }
 
-/* line 186, src/_default.scss */
+/* line 188, src/_default.scss */
 .info {
   max-width: 760px;
   margin: auto;
@@ -306,26 +306,26 @@ header h2 {
   overflow: hidden;
   padding-bottom: 3em;
 }
-/* line 195, src/_default.scss */
+/* line 197, src/_default.scss */
 .info .about, .info .featuring {
   float: left;
   width: 45%;
   margin: 0 2.5%;
 }
-/* line 200, src/_default.scss */
+/* line 202, src/_default.scss */
 .info h3 {
   font-family: Yanone Kaffeesatz;
   font-size: 1.5em;
   color: #999;
   margin-bottom: 0.3em;
 }
-/* line 207, src/_default.scss */
+/* line 209, src/_default.scss */
 .info p {
   line-height: 1.2em;
   color: #999;
 }
 
-/* line 213, src/_default.scss */
+/* line 215, src/_default.scss */
 .previous {
   margin: 2em auto 0;
   max-width: 760px;
@@ -333,43 +333,54 @@ header h2 {
   text-align: center;
   padding-bottom: 3em;
 }
-/* line 220, src/_default.scss */
+/* line 222, src/_default.scss */
 .previous .ribbon {
   width: 490px;
   margin-bottom: 2em;
 }
-/* line 225, src/_default.scss */
+/* line 227, src/_default.scss */
 .previous h2 {
   text-transform: uppercase;
 }
-/* line 229, src/_default.scss */
+/* line 231, src/_default.scss */
 .previous article {
   float: left;
   width: 33%;
 }
-/* line 233, src/_default.scss */
+/* line 235, src/_default.scss */
 .previous a {
   color: #ddd;
   text-decoration: none;
 }
-/* line 236, src/_default.scss */
+/* line 238, src/_default.scss */
 .previous a:hover {
   text-decoration: underline;
 }
-/* line 240, src/_default.scss */
+/* line 242, src/_default.scss */
 .previous img, .previous h3 {
   width: 80%;
   margin: auto;
   height: auto;
 }
-/* line 245, src/_default.scss */
+/* line 247, src/_default.scss */
 .previous h3 {
   margin: 0.4em auto 0.3em;
 }
-/* line 248, src/_default.scss */
+/* line 250, src/_default.scss */
 .previous .date {
   font-weight: 100;
   font-size: 0.9em;
   font-style: italic;
   color: #999;
+}
+
+/* line 258, src/_default.scss */
+#footer {
+  text-align: center;
+  padding: 2em 0 2.2em;
+  color: #777;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.14);
+  margin-top: 3em;
 }

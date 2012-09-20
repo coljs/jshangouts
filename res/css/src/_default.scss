@@ -21,32 +21,34 @@ header{
 
 	a{
 		text-decoration: none;
-		-webkit-transition: text-shadow 400ms;
-
-		&:hover{
-			-webkit-transition: text-shadow 400ms;
-			text-shadow: 0 2px 20px rgba(255,255,255,0.3);
-		}
 	}
 	hgroup{
-		font-size: 6.5em; 
+		font-size: 7em; 
 	}
 	h1{
 		font-family: $font-title;
 		text-transform: uppercase;
 		color: $blue;
-		display: inline;
+		// display: inline;
 		color: #eee;
+		text-shadow: 3px 0px #979797;
 
 		.gray{
 			color: $gray;
 		}
 	}
 	h2{
-		display: inline;
+		// display: inline;
 		font-family: Great Vibes;
-		color: #bbb;
-		font-size: 0.75em;
+		color: #999471;
+		font-size: 0.65em;
+		margin: -0.1em 0 0.9em;
+		-webkit-transition: text-shadow 400ms;
+		text-shadow: 0 2px 20px rgba(255,255,255,0.3);
+
+		&:hover{
+			-webkit-transition: text-shadow 400ms;
+		}
 	}
 }
 
@@ -81,17 +83,17 @@ header{
 		position: absolute;
 		display: block;
 		bottom: -0.98em;
-		border: 1.1em solid darken($red-back, 8);
+		border: 0.9em solid darken($red-back, 8);
 		z-index: -1;	
 
 	}
 	&:before {
-		left: -1.62em;
+		left: -1.42em;
 		border-right-width: 1.5em;
 		border-left-color: transparent;
 	}
 	&:after {
-		right: -1.62em;
+		right: -1.42em;
 		border-left-width: 1.5em;
 		border-right-color: transparent;
 	}
@@ -253,3 +255,12 @@ header{
 	}
 }
 
+#footer{
+	text-align: center;
+	padding: 2em 0 2.2em;
+	color: #777;
+	font-size: 0.8em;
+	line-height: 1.2em;
+	box-shadow: 0 0 100px rgba(255, 255, 255, 0.14);
+	margin-top: 3em;
+}
