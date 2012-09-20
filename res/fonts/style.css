@@ -1,0 +1,268 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('icomoon.eot');
+	src:url('icomoon.eot?#iefix') format('embedded-opentype'),
+		url('icomoon.svg#icomoon') format('svg'),
+		url('icomoon.woff') format('woff'),
+		url('icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-play:before {
+	content: "\21";
+}
+.icon-camera:before {
+	content: "\22";
+}
+.icon-bell:before {
+	content: "\23";
+}
+.icon-mail:before {
+	content: "\24";
+}
+.icon-tag:before {
+	content: "\25";
+}
+.icon-box-add:before {
+	content: "\26";
+}
+.icon-box-remove:before {
+	content: "\27";
+}
+.icon-reply:before {
+	content: "\28";
+}
+.icon-reply-2:before {
+	content: "\29";
+}
+.icon-forward:before {
+	content: "\2a";
+}
+.icon-redo:before {
+	content: "\2b";
+}
+.icon-undo:before {
+	content: "\2c";
+}
+.icon-comments:before {
+	content: "\2d";
+}
+.icon-comments-2:before {
+	content: "\2e";
+}
+.icon-cog:before {
+	content: "\2f";
+}
+.icon-rocket:before {
+	content: "\30";
+}
+.icon-fire:before {
+	content: "\31";
+}
+.icon-lab:before {
+	content: "\32";
+}
+.icon-grid-view:before {
+	content: "\33";
+}
+.icon-cloud:before {
+	content: "\34";
+}
+.icon-star:before {
+	content: "\35";
+}
+.icon-star-2:before {
+	content: "\36";
+}
+.icon-bookmark:before {
+	content: "\37";
+}
+.icon-bookmark-2:before {
+	content: "\38";
+}
+.icon-checkmark:before {
+	content: "\39";
+}
+.icon-cancel:before {
+	content: "\3a";
+}
+.icon-cancel-2:before {
+	content: "\3b";
+}
+.icon-seven-segment:before {
+	content: "\41";
+}
+.icon-seven-segment-2:before {
+	content: "\42";
+}
+.icon-seven-segment-3:before {
+	content: "\43";
+}
+.icon-seven-segment-4:before {
+	content: "\44";
+}
+.icon-seven-segment-5:before {
+	content: "\45";
+}
+.icon-facebook:before {
+	content: "\46";
+}
+.icon-twitter:before {
+	content: "\47";
+}
+.icon-youtube:before {
+	content: "\48";
+}
+.icon-flickr:before {
+	content: "\49";
+}
+.icon-github:before {
+	content: "\4a";
+}
+.icon-html5:before {
+	content: "\4b";
+}
+.icon-html5-2:before {
+	content: "\4c";
+}
+.icon-chrome:before {
+	content: "\4d";
+}
+.icon-css3:before {
+	content: "\4e";
+}
+.icon-file-css:before {
+	content: "\4f";
+}
+.icon-file-xml:before {
+	content: "\50";
+}
+.icon-file-zip:before {
+	content: "\51";
+}
+.icon-firefox:before {
+	content: "\52";
+}
+.icon-IE:before {
+	content: "\53";
+}
+.icon-opera:before {
+	content: "\54";
+}
+.icon-safari:before {
+	content: "\55";
+}
+.icon-skype:before {
+	content: "\56";
+}
+.icon-tumblr:before {
+	content: "\57";
+}
+.icon-warning:before {
+	content: "\58";
+}
+.icon-film:before {
+	content: "\59";
+}
+.icon-location:before {
+	content: "\5a";
+}
+.icon-star-3:before {
+	content: "\5b";
+}
+.icon-cancel-3:before {
+	content: "\5c";
+}
+.icon-checkmark-2:before {
+	content: "\5d";
+}
+.icon-circle:before {
+	content: "\5e";
+}
+.icon-shit:before {
+	content: "\5f";
+}
+.icon-bookmark-3:before {
+	content: "\60";
+}
+.icon-heart:before {
+	content: "\61";
+}
+.icon-document-alt-fill:before {
+	content: "\62";
+}
+.icon-fullscreen:before {
+	content: "\63";
+}
+.icon-droplet:before {
+	content: "\64";
+}
+.icon-eye:before {
+	content: "\65";
+}
+.icon-bolt:before {
+	content: "\66";
+}
+.icon-arrow-left:before {
+	content: "\67";
+}
+.icon-arrow-right:before {
+	content: "\68";
+}
+.icon-arrow-down:before {
+	content: "\69";
+}
+.icon-arrow-up:before {
+	content: "\6a";
+}
+.icon-camera-2:before {
+	content: "\6b";
+}
+.icon-pacman:before {
+	content: "\6c";
+}
+.icon-user:before {
+	content: "\6d";
+}
+.icon-unchecked:before {
+	content: "\6e";
+}
+.icon-checked:before {
+	content: "\6f";
+}
+.icon-play-alt:before {
+	content: "\70";
+}
+.icon-seven-segment-6:before {
+	content: "\40";
+}
+.icon-seven-segment-7:before {
+	content: "\3f";
+}
+.icon-seven-segment-8:before {
+	content: "\3e";
+}
+.icon-seven-segment-9:before {
+	content: "\3d";
+}
+.icon-seven-segment-10:before {
+	content: "\3c";
+}

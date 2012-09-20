@@ -1,0 +1,11 @@
+---
+layout: post
+title: De desarrollador a emprendedor
+feat: Juan Pablo Buriticá
+categories: [emprendimiento]
+permalink: de-desarrollador-a-emprendedor.html
+description: Charla en Campus Party Colombia de la triste y fuerte 
+  vida de un desarrollador front-end
+bio: Juan Pablo es un desarrollador experto en Javascript...
+youtube_id: 2Wg1CXiyNRI
+---

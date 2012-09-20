@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }} | BogotaJS</title>
+	<meta name="description" content="Hangouts sobre Javascript proveídos por BogotaJS">
+	<meta property="og:image" content="res/img/logo.png">
+	<meta property="og:site_name" content="BogotaJS">
+	<meta property="og:description" content="Hangouts sobre Javascript proveídos por BogotaJS">
+	<!-- >> Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans|Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+	<!-- << Google Fonts -->
+	<!-- >> Styles -->
+	<link href="res/css/main.css" rel="stylesheet" type="text/css">
+	<!-- << Styles -->
+	<!-- >> Head Scripts -->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="res/js/html5shiver.min.js"></script>
+	<![endif]-->
+	<!-- << Head Scripts -->
+</head>
+<body>
+	<div class="centered">
+		<header id="header" class="">
+			<hgroup>
+				<a href="/" title="BOG.JS Hangouts">
+					<h1>BOG.JS</h1>
+					<h2>hangouts</h2>
+				</a>
+			</hgroup>
+		</header><!-- /header -->
+		{{ content }}
+
+		<section class="previous">
+			<div class="non-semantic-protector">
+				<h2 class="ribbon">
+					<div class="ribbon-content">
+						Hangouts Anteriores
+					</div>
+				</h2>
+			</div>
+			{% for post in site.posts %}
+			<article>
+				<a href="{{ post.url }}" title="">
+					<img src="http://i2.ytimg.com/vi/{{ post.youtube_id }}/0.jpg">
+					<h3>{{ post.title }} feat. {{ post.feat }}</h3>
+					<time class="date" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+				</a>
+			</article>
+			{% endfor %}
+		</section>
+	</div>
+</body>
+</html> 
