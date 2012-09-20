@@ -23,7 +23,7 @@ header{
 		text-decoration: none;
 	}
 	hgroup{
-		font-size: 7em; 
+		font-size: 7em;
 	}
 	h1{
 		font-family: $font-title;
@@ -52,9 +52,9 @@ header{
 	}
 }
 
-.non-semantic-protector { 
-	position: relative; 
-	z-index: 1; 
+.non-semantic-protector {
+	position: relative;
+	z-index: 1;
 	-webkit-filter: drop-shadow(rgba(0,0,0,0.25) 0 3px 5px);
 }
 .ribbon {
@@ -84,7 +84,7 @@ header{
 		display: block;
 		bottom: -0.98em;
 		border: 0.9em solid darken($red-back, 8);
-		z-index: -1;	
+		z-index: -1;
 
 	}
 	&:before {
@@ -124,7 +124,7 @@ header{
 		font-size: 0.8em;
 	}
 	&:before, &:after {
-		border-color: darken($yellow-back, 8);	
+		border-color: darken($yellow-back, 8);
 
 	}
 	&:before {
@@ -250,7 +250,7 @@ header{
 	.date{
 		font-weight: 100;
 		font-size: 0.9em;
-		font-style: italic;	
+		font-style: italic;
 		color: #999;
 	}
 }
@@ -263,4 +263,9 @@ header{
 	line-height: 1.2em;
 	box-shadow: 0 0 100px rgba(255, 255, 255, 0.14);
 	margin-top: 3em;
+
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
 }
