@@ -54,9 +54,9 @@ header{
 	}
 }
 
-.non-semantic-protector { 
-	position: relative; 
-	z-index: 1; 
+.non-semantic-protector {
+	position: relative;
+	z-index: 1;
 	-webkit-filter: drop-shadow(rgba(0,0,0,0.25) 0 3px 5px);
 }
 .ribbon {
@@ -181,6 +181,7 @@ header{
 	h2{
 		font-weight: bold;
 		font-size: 0.7em;
+		line-height: 1.2em;
 	}
 	.feat{
 		font-family: Great Vibes;
@@ -267,7 +268,7 @@ header{
 	.date{
 		font-weight: 100;
 		font-size: 0.9em;
-		font-style: italic;	
+		font-style: italic;
 		color: #999;
 	}
 }
@@ -280,4 +281,10 @@ header{
 	line-height: 1.2em;
 	box-shadow: 0 0 100px rgba(255, 255, 255, 0.14);
 	margin-top: 3em;
+	background: black;
+
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
 }
