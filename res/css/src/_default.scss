@@ -1,5 +1,6 @@
 html{
-	background: #282828;
+	background: -webkit-radial-gradient(#222121 30%, black);
+	background-size: 100%;
 }
 body{
 	font-family: $font;
@@ -16,14 +17,14 @@ body{
 }
 
 header{
-	padding: 2em 0 0;
+	padding: 3em 0 0.1em;
 	text-align: center;
 
 	a{
 		text-decoration: none;
 	}
 	hgroup{
-		font-size: 7em; 
+		font-size: 9em; 
 	}
 	h1{
 		font-family: $font-title;
@@ -39,12 +40,13 @@ header{
 	}
 	h2{
 		// display: inline;
-		font-family: Great Vibes;
-		color: #999471;
-		font-size: 0.65em;
-		margin: -0.1em 0 0.9em;
+		font-family: Coda;
+		color: #999;
+		color: $blue;
+		font-size: 0.27em;
+		margin: -0.2em 0 0.9em;
 		-webkit-transition: text-shadow 400ms;
-		text-shadow: 0 2px 20px rgba(255,255,255,0.3);
+		// text-shadow: 0 2px 20px rgba(255,255,255,0.3);
 
 		&:hover{
 			-webkit-transition: text-shadow 400ms;
@@ -58,14 +60,18 @@ header{
 	-webkit-filter: drop-shadow(rgba(0,0,0,0.25) 0 3px 5px);
 }
 .ribbon {
-	font-size: 2.3em;
-	font-family: Yanone Kaffeesatz;
+	font-size: 2.1em;
+	font-family: Coda;
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
 	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
 
 	width: 700px;
 	position: relative;
-	background: -webkit-radial-gradient($red-back, darken($red-back, 10));
+	@include box-shadow(inset 20px 0 15px -15px rgba(0,0,0,0.15), inset -20px 0 15px -15px rgba(0,0,0,0.15));
+	background-color: $red-back;
+	background-image: -webkit-radial-gradient($red-back, darken($red-back, 12));
+	background-image: -moz-radial-gradient($red-back, darken($red-back, 12));
+	background-image: radial-gradient($red-back, darken($red-back, 12));
 	color: #fff;
 	text-align: center;
 	padding: 0.5em 2em; /* Adjust to suit */
@@ -82,18 +88,18 @@ header{
 		content: "";
 		position: absolute;
 		display: block;
-		bottom: -0.98em;
-		border: 0.9em solid darken($red-back, 8);
-		z-index: -1;	
+		bottom: -0.6em;
+		border: 0.9em solid darken($red-back, 15);
+		z-index: -2;	
 
 	}
 	&:before {
-		left: -1.42em;
+		left: -1.8em;
 		border-right-width: 1.5em;
 		border-left-color: transparent;
 	}
 	&:after {
-		right: -1.42em;
+		right: -1.8em;
 		border-left-width: 1.5em;
 		border-right-color: transparent;
 	}
@@ -102,21 +108,27 @@ header{
 		position: absolute;
 		display: block;
 		border-style: solid;
-		border-color: $red-back2 transparent transparent transparent;
-		bottom: -0.98em;
+		border-color: darken($red-back, 25) transparent transparent transparent;
+		bottom: -0.6em;
+		z-index: -1;
 	}
 	& .ribbon-content:before {
-		left: 0;
-		border-width: 1em 0 0 1em;
+		left: -0.02em;
+		border-width: 0.6em 0 0 0.6em;
 	}
 	& .ribbon-content:after {
-		right: 0;
-		border-width: 1em 1em 0 0;
+		right: -0.02em;
+		border-width: 0.6em 0.6em 0 0;
 	}
 }
 
 .live{
-	background: -webkit-radial-gradient($yellow-back, darken($yellow-back, 13));
+	background-color: $yellow-back;
+	background-image: -webkit-radial-gradient($yellow-back, darken($yellow-back, 13));
+	background-image: -moz-radial-gradient($yellow-back, darken($yellow-back, 13));
+	background-image: radial-gradient($yellow-back, darken($yellow-back, 13));
+	@include box-shadow(inset 20px 0 15px -15px rgba(0,0,0,0.15), inset -20px 0 15px -15px rgba(0,0,0,0.15));
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.4);
 
 	.icon{
 		color: $red-back;
@@ -124,7 +136,7 @@ header{
 		font-size: 0.8em;
 	}
 	&:before, &:after {
-		border-color: darken($yellow-back, 8);	
+		border-color: darken($yellow-back, 15);	
 
 	}
 	&:before {
@@ -152,18 +164,23 @@ header{
 	color: white;
 	text-align: center;
 	font-size: 2.5em;
-	font-family: Yanone Kaffeesatz;
+	font-family: Coda;
 	font-size: 5em;
 	text-transform: uppercase;
-	border-radius: 0 0 10px 10px;
+	@include border-radius(0 0 7px 7px);
+	text-shadow: 0px 0px 8px black, 0px 0px 3px black;
 
 	.inner{
 		padding: 1em;
-		background: rgba(0,0,0,0.4);
-		border-radius: 0 0 10px 10px;
+		background-color: rgba(0,0,0,0.4);
+		background-image: -webkit-radial-gradient(transparent 50%, rgba(0, 0, 0, 0.4));
+		background-image: -moz-radial-gradient(transparent 50%, rgba(0, 0, 0, 0.4));
+		background-image: radial-gradient(transparent 50%, rgba(0, 0, 0, 0.4));
+		@include border-radius(0 0 7px 7px);
 	}
 	h2{
 		font-weight: bold;
+		font-size: 0.7em;
 	}
 	.feat{
 		font-family: Great Vibes;
@@ -178,9 +195,9 @@ header{
 	}
 	.date{
 		font-family: $font;
-		font-size: 0.3em;
+		font-size: 17px;
 		margin-top: 2em;
-		text-transform: lowercase;
+		// text-transform: lowercase;
 		font-weight: 300;
 	}
 }
@@ -201,7 +218,7 @@ header{
 	}
 	h3{
 		// font-weight: bold;
-		font-family: Yanone Kaffeesatz;
+		font-family: Coda;
 		font-size: 1.5em;
 		color: #999;
 		margin-bottom: 0.3em;

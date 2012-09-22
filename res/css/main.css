@@ -85,40 +85,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, src/_default.scss */
 html {
-  background: #282828;
+  background: -webkit-radial-gradient(#222121 30%, black);
+  background-size: 100%;
 }
 
-/* line 4, src/_default.scss */
+/* line 5, src/_default.scss */
 body {
   font-family: Droid Sans, sans-serif;
   color: #eee;
 }
 
-/* line 9, src/_default.scss */
+/* line 10, src/_default.scss */
 .centered {
   max-width: 900px;
   margin: auto;
 }
 
-/* line 14, src/_default.scss */
+/* line 15, src/_default.scss */
 .icon {
   font-family: "icon";
 }
 
-/* line 18, src/_default.scss */
+/* line 19, src/_default.scss */
 header {
-  padding: 2em 0 0;
+  padding: 3em 0 0.1em;
   text-align: center;
 }
-/* line 22, src/_default.scss */
+/* line 23, src/_default.scss */
 header a {
   text-decoration: none;
 }
-/* line 25, src/_default.scss */
+/* line 26, src/_default.scss */
 header hgroup {
-  font-size: 7em;
+  font-size: 9em;
 }
-/* line 28, src/_default.scss */
+/* line 29, src/_default.scss */
 header h1 {
   font-family: franchise;
   text-transform: uppercase;
@@ -126,40 +127,46 @@ header h1 {
   color: #eee;
   text-shadow: 3px 0px #979797;
 }
-/* line 36, src/_default.scss */
+/* line 37, src/_default.scss */
 header h1 .gray {
   color: #888888;
 }
-/* line 40, src/_default.scss */
+/* line 41, src/_default.scss */
 header h2 {
-  font-family: Great Vibes;
-  color: #999471;
-  font-size: 0.65em;
-  margin: -0.1em 0 0.9em;
+  font-family: Coda;
+  color: #999;
+  color: #20a8dd;
+  font-size: 0.27em;
+  margin: -0.2em 0 0.9em;
   -webkit-transition: text-shadow 400ms;
-  text-shadow: 0 2px 20px rgba(255, 255, 255, 0.3);
 }
-/* line 49, src/_default.scss */
+/* line 51, src/_default.scss */
 header h2:hover {
   -webkit-transition: text-shadow 400ms;
 }
 
-/* line 55, src/_default.scss */
+/* line 57, src/_default.scss */
 .non-semantic-protector {
   position: relative;
   z-index: 1;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 3px 5px);
 }
 
-/* line 60, src/_default.scss */
+/* line 62, src/_default.scss */
 .ribbon {
-  font-size: 2.3em;
-  font-family: Yanone Kaffeesatz;
+  font-size: 2.1em;
+  font-family: Coda;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
   width: 700px;
   position: relative;
-  background: -webkit-radial-gradient(#be2727, #941e1e);
+  -webkit-box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.15), inset -20px 0 15px -15px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.15), inset -20px 0 15px -15px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.15), inset -20px 0 15px -15px rgba(0, 0, 0, 0.15);
+  background-color: #be2727;
+  background-image: -webkit-radial-gradient(#be2727, #8b1d1d);
+  background-image: -moz-radial-gradient(#be2727, #8b1d1d);
+  background-image: radial-gradient(#be2727, #8b1d1d);
   color: #fff;
   text-align: center;
   padding: 0.5em 2em;
@@ -167,83 +174,91 @@ header h2:hover {
   margin: 1.5em auto 0;
   /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
-/* line 74, src/_default.scss */
+/* line 80, src/_default.scss */
 .ribbon .title {
   text-transform: uppercase;
 }
-/* line 77, src/_default.scss */
+/* line 83, src/_default.scss */
 .ribbon .icon {
   margin-right: 0.5em;
 }
-/* line 81, src/_default.scss */
+/* line 87, src/_default.scss */
 .ribbon:before, .ribbon:after {
   content: "";
   position: absolute;
   display: block;
-  bottom: -0.98em;
-  border: 0.9em solid #9c2020;
-  z-index: -1;
+  bottom: -0.6em;
+  border: 0.9em solid #7f1a1a;
+  z-index: -2;
 }
-/* line 90, src/_default.scss */
+/* line 96, src/_default.scss */
 .ribbon:before {
-  left: -1.42em;
+  left: -1.8em;
   border-right-width: 1.5em;
   border-left-color: transparent;
 }
-/* line 95, src/_default.scss */
+/* line 101, src/_default.scss */
 .ribbon:after {
-  right: -1.42em;
+  right: -1.8em;
   border-left-width: 1.5em;
   border-right-color: transparent;
 }
-/* line 100, src/_default.scss */
+/* line 106, src/_default.scss */
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
   content: "";
   position: absolute;
   display: block;
   border-style: solid;
-  border-color: maroon transparent transparent transparent;
-  bottom: -0.98em;
+  border-color: #541111 transparent transparent transparent;
+  bottom: -0.6em;
+  z-index: -1;
 }
-/* line 108, src/_default.scss */
+/* line 115, src/_default.scss */
 .ribbon .ribbon-content:before {
-  left: 0;
-  border-width: 1em 0 0 1em;
+  left: -0.02em;
+  border-width: 0.6em 0 0 0.6em;
 }
-/* line 112, src/_default.scss */
+/* line 119, src/_default.scss */
 .ribbon .ribbon-content:after {
-  right: 0;
-  border-width: 1em 1em 0 0;
+  right: -0.02em;
+  border-width: 0.6em 0.6em 0 0;
 }
 
-/* line 118, src/_default.scss */
+/* line 125, src/_default.scss */
 .live {
-  background: -webkit-radial-gradient(#eb9d15, #af750f);
+  background-color: #eeb80f;
+  background-image: -webkit-radial-gradient(#eeb80f, #b0880b);
+  background-image: -moz-radial-gradient(#eeb80f, #b0880b);
+  background-image: radial-gradient(#eeb80f, #b0880b);
+  -webkit-box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.15), inset -20px 0 15px -15px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.15), inset -20px 0 15px -15px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.15), inset -20px 0 15px -15px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.4);
 }
-/* line 121, src/_default.scss */
+/* line 133, src/_default.scss */
 .live .icon {
   color: #be2727;
   text-shadow: 0 0 5px maroon;
   font-size: 0.8em;
 }
-/* line 126, src/_default.scss */
+/* line 138, src/_default.scss */
 .live:before, .live:after {
-  border-color: #c68411;
+  border-color: #a6800a;
 }
-/* line 130, src/_default.scss */
+/* line 142, src/_default.scss */
 .live:before {
   border-left-color: transparent;
 }
-/* line 133, src/_default.scss */
+/* line 145, src/_default.scss */
 .live:after {
   border-right-color: transparent;
 }
-/* line 136, src/_default.scss */
+/* line 148, src/_default.scss */
 .live .ribbon-content:before, .live .ribbon-content:after {
   border-color: #965f00 transparent transparent transparent;
 }
 
-/* line 141, src/_default.scss */
+/* line 153, src/_default.scss */
 .hangout {
   background: black;
   width: 760px;
@@ -251,7 +266,7 @@ header h2:hover {
   min-height: 400px;
 }
 
-/* line 148, src/_default.scss */
+/* line 160, src/_default.scss */
 .comming_soon {
   max-width: 760px;
   margin: auto;
@@ -259,44 +274,56 @@ header h2:hover {
   color: white;
   text-align: center;
   font-size: 2.5em;
-  font-family: Yanone Kaffeesatz;
+  font-family: Coda;
   font-size: 5em;
   text-transform: uppercase;
-  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 7px 7px;
+  -moz-border-radius: 0 0 7px 7px;
+  -ms-border-radius: 0 0 7px 7px;
+  -o-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+  text-shadow: 0px 0px 8px black, 0px 0px 3px black;
 }
-/* line 160, src/_default.scss */
+/* line 173, src/_default.scss */
 .comming_soon .inner {
   padding: 1em;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 0 0 10px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: -webkit-radial-gradient(transparent 50%, rgba(0, 0, 0, 0.4));
+  background-image: -moz-radial-gradient(transparent 50%, rgba(0, 0, 0, 0.4));
+  background-image: radial-gradient(transparent 50%, rgba(0, 0, 0, 0.4));
+  -webkit-border-radius: 0 0 7px 7px;
+  -moz-border-radius: 0 0 7px 7px;
+  -ms-border-radius: 0 0 7px 7px;
+  -o-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
 }
-/* line 165, src/_default.scss */
+/* line 181, src/_default.scss */
 .comming_soon h2 {
   font-weight: bold;
+  font-size: 0.7em;
 }
-/* line 168, src/_default.scss */
+/* line 185, src/_default.scss */
 .comming_soon .feat {
   font-family: Great Vibes;
   text-transform: lowercase;
   font-size: 0.7em;
   margin: 0.5em 0;
 }
-/* line 174, src/_default.scss */
+/* line 191, src/_default.scss */
 .comming_soon h3 {
   font-size: 0.8em;
   font-family: Great Vibes;
   text-transform: capitalize;
 }
-/* line 179, src/_default.scss */
+/* line 196, src/_default.scss */
 .comming_soon .date {
   font-family: Droid Sans, sans-serif;
-  font-size: 0.3em;
+  font-size: 17px;
   margin-top: 2em;
-  text-transform: lowercase;
   font-weight: 300;
 }
 
-/* line 188, src/_default.scss */
+/* line 205, src/_default.scss */
 .info {
   max-width: 760px;
   margin: auto;
@@ -306,26 +333,26 @@ header h2:hover {
   overflow: hidden;
   padding-bottom: 3em;
 }
-/* line 197, src/_default.scss */
+/* line 214, src/_default.scss */
 .info .about, .info .featuring {
   float: left;
   width: 45%;
   margin: 0 2.5%;
 }
-/* line 202, src/_default.scss */
+/* line 219, src/_default.scss */
 .info h3 {
-  font-family: Yanone Kaffeesatz;
+  font-family: Coda;
   font-size: 1.5em;
   color: #999;
   margin-bottom: 0.3em;
 }
-/* line 209, src/_default.scss */
+/* line 226, src/_default.scss */
 .info p {
   line-height: 1.2em;
   color: #999;
 }
 
-/* line 215, src/_default.scss */
+/* line 232, src/_default.scss */
 .previous {
   margin: 2em auto 0;
   max-width: 760px;
@@ -333,40 +360,40 @@ header h2:hover {
   text-align: center;
   padding-bottom: 3em;
 }
-/* line 222, src/_default.scss */
+/* line 239, src/_default.scss */
 .previous .ribbon {
   width: 490px;
   margin-bottom: 2em;
 }
-/* line 227, src/_default.scss */
+/* line 244, src/_default.scss */
 .previous h2 {
   text-transform: uppercase;
 }
-/* line 231, src/_default.scss */
+/* line 248, src/_default.scss */
 .previous article {
   float: left;
   width: 33%;
 }
-/* line 235, src/_default.scss */
+/* line 252, src/_default.scss */
 .previous a {
   color: #ddd;
   text-decoration: none;
 }
-/* line 238, src/_default.scss */
+/* line 255, src/_default.scss */
 .previous a:hover {
   text-decoration: underline;
 }
-/* line 242, src/_default.scss */
+/* line 259, src/_default.scss */
 .previous img, .previous h3 {
   width: 80%;
   margin: auto;
   height: auto;
 }
-/* line 247, src/_default.scss */
+/* line 264, src/_default.scss */
 .previous h3 {
   margin: 0.4em auto 0.3em;
 }
-/* line 250, src/_default.scss */
+/* line 267, src/_default.scss */
 .previous .date {
   font-weight: 100;
   font-size: 0.9em;
@@ -374,7 +401,7 @@ header h2:hover {
   color: #999;
 }
 
-/* line 258, src/_default.scss */
+/* line 275, src/_default.scss */
 #footer {
   text-align: center;
   padding: 2em 0 2.2em;

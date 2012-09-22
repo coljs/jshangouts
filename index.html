@@ -4,7 +4,8 @@ title: Hangouts de Javascript
 
 next_title: JS para Gráficos y Visualización de Datos
 next_feat: Nicolás Garcia Belmonte
-next_date: 2012-08-19
+next_date: 2012-09-21
+next_time: "16:30 (BOG GMT-5)"
 next_categories: [data-visualization, twitter, philogl]
 next_description: "En este hangout, Nicolás presentará las tecnologías Web que usa y cómo las combina para crear visualizaciones de datos. Hablará sobre tecnologías como el 2D Canvas, WebGL, ES5, XHR2 y otras. También presentará dos librerías de las que es autor: el JavaScript InfoVis Toolkit y PhiloGL."
 next_bio: Nicolás trabaja como Data Visualization Scientist en Twitter y es el creador de populares librerías de visualización de datos como PhiloGL y Javascript InfoVis Toolkit.
@@ -13,7 +14,7 @@ next_url:
 
 {% if page.next_url == null %}
 <div class="non-semantic-protector">
-	<div class="ribbon live">
+	<div class="ribbon ">
 		<div class="ribbon-content title">Próximamente
 		</div>
 	</div>
@@ -23,7 +24,7 @@ next_url:
 		<h2>{{ page.next_title }}</h2>
 		<p class="feat"> - feat - </p>
 		<h3>{{ page.next_feat }}</h3>
-		<time class="date" datetime="{{ page.next_date }}">{{ page.next_date | date_to_string }}</time>
+		<time class="date" datetime="{{ page.next_date }}">{{ page.next_date | date_to_string }} a las {{page.next_time}}</time>
 	</div>
 </div>
 <div class="info">
@@ -39,7 +40,7 @@ next_url:
 
 {% else %}
 <div class="non-semantic-protector">
-	<h2 class="ribbon live">
+	<h2 class="ribbon ">
 		<div class="ribbon-content">
 			<span class="icon rec">&#x5e;</span> <span class="title">En Vivo: {{ page.next_title }}</span>
 		</div>
