@@ -329,10 +329,10 @@ header h2:hover {
   max-width: 760px;
   margin: auto;
   color: white;
-  margin-top: 1em;
+  margin-top: 3em;
   font-weight: 100;
   overflow: hidden;
-  padding-bottom: 3em;
+  padding-bottom: 4.5em;
 }
 /* line 215, src/_default.scss */
 .info .about, .info .featuring {
@@ -345,7 +345,7 @@ header h2:hover {
   font-family: Coda;
   font-size: 1.5em;
   color: #999;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.7em;
 }
 /* line 227, src/_default.scss */
 .info p {
@@ -356,10 +356,9 @@ header h2:hover {
 /* line 233, src/_default.scss */
 .previous {
   margin: 2em auto 0;
-  max-width: 760px;
   overflow: hidden;
   text-align: center;
-  padding-bottom: 3em;
+  padding-bottom: 4em;
 }
 /* line 240, src/_default.scss */
 .previous .ribbon {
@@ -369,40 +368,89 @@ header h2:hover {
 /* line 245, src/_default.scss */
 .previous h2 {
   text-transform: uppercase;
+  font-family: Coda;
+  font-size: 2em;
+  margin: 3em 0 2em;
+  border: 1px solid #444;
+  border-left: none;
+  border-right: none;
+  padding: 0.6em 0 0.4em;
 }
-/* line 249, src/_default.scss */
+/* line 256, src/_default.scss */
 .previous article {
   float: left;
   width: 33%;
 }
-/* line 253, src/_default.scss */
+/* line 260, src/_default.scss */
 .previous a {
   color: #ddd;
   text-decoration: none;
 }
-/* line 256, src/_default.scss */
-.previous a:hover {
-  text-decoration: underline;
+/* line 265, src/_default.scss */
+.previous a:hover h3 {
+  color: #bbb;
+  -webkit-transition: color 300ms;
+  -moz-transition: color 300ms;
+  -o-transition: color 300ms;
+  transition: color 300ms;
 }
-/* line 260, src/_default.scss */
+/* line 269, src/_default.scss */
+.previous a:hover .date {
+  color: #999;
+  -webkit-transition: color 300ms;
+  -moz-transition: color 300ms;
+  -o-transition: color 300ms;
+  transition: color 300ms;
+}
+/* line 273, src/_default.scss */
+.previous a:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+/* line 279, src/_default.scss */
 .previous img, .previous h3 {
   width: 80%;
   margin: auto;
   height: auto;
 }
-/* line 265, src/_default.scss */
+/* line 284, src/_default.scss */
+.previous img {
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+  border: 1px solid #333;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+/* line 290, src/_default.scss */
 .previous h3 {
   margin: 0.4em auto 0.3em;
+  line-height: 1.2em;
+  color: #888;
+  -webkit-transition: color 300ms;
+  -moz-transition: color 300ms;
+  -o-transition: color 300ms;
+  transition: color 300ms;
 }
-/* line 268, src/_default.scss */
+/* line 296, src/_default.scss */
 .previous .date {
   font-weight: 100;
   font-size: 0.9em;
   font-style: italic;
-  color: #999;
+  color: #666;
+  -webkit-transition: color 300ms;
+  -moz-transition: color 300ms;
+  -o-transition: color 300ms;
+  transition: color 300ms;
 }
 
-/* line 276, src/_default.scss */
+/* line 305, src/_default.scss */
 #footer {
   text-align: center;
   padding: 2em 0 2.2em;
@@ -413,7 +461,7 @@ header h2:hover {
   margin-top: 3em;
   background: black;
 }
-/* line 286, src/_default.scss */
+/* line 315, src/_default.scss */
 #footer a {
   color: #fff;
   text-decoration: none;

@@ -207,10 +207,10 @@ header{
 	max-width: 760px;
 	margin: auto;
 	color: white;
-	margin-top: 1em;
+	margin-top: 3em;
 	font-weight: 100;
 	overflow: hidden;
-	padding-bottom: 3em;
+	padding-bottom: 4.5em;
 
 	.about, .featuring{
 		float: left;
@@ -222,7 +222,7 @@ header{
 		font-family: Coda;
 		font-size: 1.5em;
 		color: #999;
-		margin-bottom: 0.3em;
+		margin-bottom: 0.7em;
 	}
 	p{
 		line-height: 1.2em;
@@ -232,10 +232,10 @@ header{
 
 .previous{
 	margin: 2em auto 0;
-	max-width: 760px;
+	// max-width: 760px;
 	overflow: hidden;
 	text-align: center;
-	padding-bottom: 3em;
+	padding-bottom: 4em;
 
 	.ribbon{
 		width: 490px;
@@ -244,6 +244,13 @@ header{
 
 	h2{
 		text-transform: uppercase;
+		font-family: Coda;
+		font-size: 2em;
+		margin: 3em 0 2em;
+		border: 1px solid #444;
+		border-left: none;
+		border-right: none;
+		padding: 0.6em 0 0.4em;
 	}
 
 	article{
@@ -254,7 +261,19 @@ header{
 		color: #ddd;
 		text-decoration: none;
 		&:hover{
-			text-decoration: underline;
+			// text-decoration: underline;
+			h3{
+				color: #bbb;
+				@include transition(color 300ms);
+			}
+			.date{
+				color: #999;
+				@include transition(color 300ms);
+			}
+			img{
+				@include opacity(1);
+				@include transition(opacity 300ms);
+			}
 		}
 	}
 	img, h3{
@@ -262,14 +281,24 @@ header{
 		margin: auto;
 		height: auto;
 	}
+	img{
+		box-shadow: 0 0 6px rgba(255,255,255, 0.1);
+		border: 1px solid #333;
+		@include opacity(0.85);
+		@include transition(opacity 300ms);
+	}
 	h3{
 		margin: 0.4em auto 0.3em;
+		line-height: 1.2em;
+		color: #888;
+		@include transition(color 300ms);
 	}
 	.date{
 		font-weight: 100;
 		font-size: 0.9em;
 		font-style: italic;
-		color: #999;
+		color: #666;
+		@include transition(color 300ms);
 	}
 }
 

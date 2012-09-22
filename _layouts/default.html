@@ -43,13 +43,11 @@
 		{{ content }}
 
 		<section class="previous">
-			<div class="non-semantic-protector">
-				<h2 class="ribbon">
-					<div class="ribbon-content">
-						Hangouts Anteriores
-					</div>
-				</h2>
-			</div>
+			<h2>
+				<div>
+					Hangouts Anteriores
+				</div>
+			</h2>
 			{% for post in site.posts %}
 			<article>
 				<a href="{{ post.url }}" title="">
