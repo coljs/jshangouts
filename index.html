@@ -64,11 +64,12 @@ next_active:
 {% endif %}
 
 {% if page.next_url == null %}
+{% assign first_post = site.posts.first %}
 <div class="non-semantic-protector">
 	<h2 class="ribbon">
 		<div class="ribbon-content">
 			<a href="{{ first_post.permalink }}">
-				<span class="icon">H</span> <span class="title">Última charla: {% assign first_post = site.posts.first %}{{ first_post.title }} feat. {{ first_post.feat }}</span>
+				<span class="icon">H</span> <span class="title">Última charla: {{ first_post.title }} feat. {{ first_post.feat }}</span>
 			</a>
 		</div>
 	</h2>
