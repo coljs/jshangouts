@@ -352,20 +352,26 @@ header h2:hover {
   line-height: 1.2em;
   color: #999;
 }
+/* line 231, src/_default.scss */
+.info .slides {
+  clear: both;
+  margin: 0 2.5%;
+  padding-top: 4em;
+}
 
-/* line 233, src/_default.scss */
+/* line 238, src/_default.scss */
 .previous {
   margin: 2em auto 0;
   overflow: hidden;
   text-align: center;
   padding-bottom: 4em;
 }
-/* line 240, src/_default.scss */
+/* line 245, src/_default.scss */
 .previous .ribbon {
   width: 490px;
   margin-bottom: 2em;
 }
-/* line 245, src/_default.scss */
+/* line 250, src/_default.scss */
 .previous h2 {
   text-transform: uppercase;
   font-family: Coda;
@@ -376,17 +382,17 @@ header h2:hover {
   border-right: none;
   padding: 0.6em 0 0.4em;
 }
-/* line 256, src/_default.scss */
+/* line 261, src/_default.scss */
 .previous article {
   float: left;
   width: 33%;
 }
-/* line 260, src/_default.scss */
+/* line 265, src/_default.scss */
 .previous a {
   color: #ddd;
   text-decoration: none;
 }
-/* line 265, src/_default.scss */
+/* line 270, src/_default.scss */
 .previous a:hover h3 {
   color: #bbb;
   -webkit-transition: color 300ms;
@@ -394,7 +400,7 @@ header h2:hover {
   -o-transition: color 300ms;
   transition: color 300ms;
 }
-/* line 269, src/_default.scss */
+/* line 274, src/_default.scss */
 .previous a:hover .date {
   color: #999;
   -webkit-transition: color 300ms;
@@ -402,7 +408,7 @@ header h2:hover {
   -o-transition: color 300ms;
   transition: color 300ms;
 }
-/* line 273, src/_default.scss */
+/* line 278, src/_default.scss */
 .previous a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -411,13 +417,13 @@ header h2:hover {
   -o-transition: opacity 300ms;
   transition: opacity 300ms;
 }
-/* line 279, src/_default.scss */
+/* line 284, src/_default.scss */
 .previous img, .previous h3 {
   width: 80%;
   margin: auto;
   height: auto;
 }
-/* line 284, src/_default.scss */
+/* line 289, src/_default.scss */
 .previous img {
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
   border: 1px solid #333;
@@ -428,7 +434,7 @@ header h2:hover {
   -o-transition: opacity 300ms;
   transition: opacity 300ms;
 }
-/* line 290, src/_default.scss */
+/* line 295, src/_default.scss */
 .previous h3 {
   margin: 0.4em auto 0.3em;
   line-height: 1.2em;
@@ -438,7 +444,7 @@ header h2:hover {
   -o-transition: color 300ms;
   transition: color 300ms;
 }
-/* line 296, src/_default.scss */
+/* line 301, src/_default.scss */
 .previous .date {
   font-weight: 100;
   font-size: 0.9em;
@@ -450,7 +456,7 @@ header h2:hover {
   transition: color 300ms;
 }
 
-/* line 305, src/_default.scss */
+/* line 310, src/_default.scss */
 #footer {
   text-align: center;
   padding: 2em 0 2.2em;
@@ -461,7 +467,7 @@ header h2:hover {
   margin-top: 3em;
   background: black;
 }
-/* line 315, src/_default.scss */
+/* line 320, src/_default.scss */
 #footer a {
   color: #fff;
   text-decoration: none;

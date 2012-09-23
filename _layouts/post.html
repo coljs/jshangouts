@@ -20,4 +20,10 @@ layout: default
 		<h3>Invitado</h3>
 		<p>{{ page.bio }}</p>
 	</div>
+	{% if page.slides %}
+	<div class="slides">
+		<h3>Slides</h3>
+		<script async class="speakerdeck-embed" data-id="{{ page.slides }}" data-ratio="1.3333333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+	</div>
+	{% endif %}
 </div>
