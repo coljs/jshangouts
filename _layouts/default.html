@@ -48,7 +48,10 @@
 					Hangouts Anteriores
 				</div>
 			</h2>
+			{% assign first_post = site.posts.first %}
 			{% for post in site.posts %}
+				{% if page.is_index and first_post.title == post.title %}
+				{% elsif post.title != page.title %}
 			<article>
 				<a href="{{ post.url }}" title="">
 					<img src="http://i2.ytimg.com/vi/{{ post.youtube_id }}/0.jpg">
@@ -56,6 +59,7 @@
 					<time class="date" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
 				</a>
 			</article>
+				{% endif %}
 			{% endfor %}
 		</section>
 	</div>

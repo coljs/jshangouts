@@ -83,6 +83,10 @@ header{
 	.icon{
 		margin-right: 0.5em;
 	}
+	a{
+		color: white;
+		text-decoration: none;
+	}
 
 	&:before, &:after {
 		content: "";
