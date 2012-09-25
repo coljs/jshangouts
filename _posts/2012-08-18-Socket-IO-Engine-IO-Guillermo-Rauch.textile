@@ -2,10 +2,9 @@
 layout: post
 title: Socket.IO / Engine.IO
 feat: Guillermo Rauch
+date: 2012-08-18
 categories: [socket.io, html5, amazon, heroku]
-permalink: engine-io-and-socket-io.html
-description: Introducción a Engine.IO y Socket.IO por Guillermo
-  Rauch, el creador de estas herramientas.
+description: "Introducción a Engine.IO y Socket.IO por Guillermo Rauch, el creador de estas herramientas."
 bio: Guillermo Rauch es un desarrollador experto en Javascript...
 youtube_id: e3FdQAiG3-o
 ---

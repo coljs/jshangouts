@@ -5,6 +5,18 @@ html{
 body{
 	font-family: $font;
 	color: #eee;
+	// font: 100%/1.5 $font;
+}
+
+body.dark{
+	color: #eee;
+	p{
+		color: #eee;
+	}
+}
+
+a{
+	color: $blue;
 }
 
 .centered{
@@ -65,7 +77,7 @@ header{
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
 	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
 
-	width: 700px;
+	max-width: 700px;
 	position: relative;
 	@include box-shadow(inset 20px 0 15px -15px rgba(0,0,0,0.15), inset -20px 0 15px -15px rgba(0,0,0,0.15));
 	background-color: $red-back;
@@ -156,9 +168,15 @@ header{
 
 .hangout{
 	background: black;
-	width: 760px;
+	max-width: 760px;
 	margin: auto;
 	min-height: 400px;
+	position: relative;
+	z-index: 2;
+
+	iframe{
+		width: 100% !important;
+	}
 }
 
 .comming_soon{
@@ -225,17 +243,33 @@ header{
 		// font-weight: bold;
 		font-family: Coda;
 		font-size: 1.5em;
-		color: #999;
+		color: #bbb;
 		margin-bottom: 0.7em;
 	}
 	p{
 		line-height: 1.2em;
-		color: #999;
+		color: #bbb;
 	}
 	.slides{
 		clear: both;
 		margin: 0 2.5%;
 		padding-top: 4em;
+	}
+}
+.date_post{
+	max-width: 760px;
+	font-style: italic;
+	// font-size: 0.9em;
+	text-align: right;
+	color: #666;
+	margin: 0.9em auto;
+}
+
+.disqus_wrapper{
+	max-width: 720px;
+	margin: auto;
+	#disqus_thread{
+
 	}
 }
 

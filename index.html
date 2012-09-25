@@ -4,12 +4,11 @@ title: Hangouts de Javascript
 is_index: true
 
 next_title:
-next_feat: Nicolás García Belmonte
-next_date: 2012-09-22
-next_time: "16:30 (BOG GMT-5)"
-next_categories: [data-visualization, twitter, philogl]
-next_description: "En este hangout, Nicolás presentará las tecnologías Web que usa y cómo las combina para crear visualizaciones de datos. Hablará sobre tecnologías como el 2D Canvas, WebGL, ES5, XHR2 y otras. También presentará dos librerías de las que es autor: el JavaScript InfoVis Toolkit y PhiloGL."
-next_bio: Nicolás trabaja como Data Visualization Scientist en Twitter y es el creador de populares librerías de visualización de datos como PhiloGL y Javascript InfoVis Toolkit.
+next_feat: 
+next_date: 
+next_time: 
+next_description: 
+next_bio: 
 next_url:
 next_active:
 ---
@@ -68,7 +67,7 @@ next_active:
 <div class="non-semantic-protector">
 	<h2 class="ribbon">
 		<div class="ribbon-content">
-			<a href="{{ first_post.permalink }}">
+			<a href="{{ first_post.url }}">
 				<span class="icon">H</span> <span class="title">Última charla: {{ first_post.title }} feat. {{ first_post.feat }}</span>
 			</a>
 		</div>
@@ -77,6 +76,9 @@ next_active:
 <div class="hangout">
 	<iframe width="760" height="428" src="http://www.youtube.com/embed/{{ first_post.youtube_id }}" frameborder="0" allowfullscreen></iframe>
 </div>
+
+{% include date.html %}
+
 <div class="info">
 	<div class="about">
 		<h3>Introducción</h3>

@@ -4,7 +4,7 @@ layout: default
 <div class="non-semantic-protector">
 	<h2 class="ribbon">
 		<div class="ribbon-content">
-			<a href="{{ page.permalink }}">
+			<a href="{{ post.url }}">
 				<span class="icon">H</span> <span class="title">{{ page.title }} feat. {{ page.feat }}</span>
 			</a>
 		</div>
@@ -13,6 +13,9 @@ layout: default
 <div class="hangout">
 	<iframe width="760" height="428" src="http://www.youtube.com/embed/{{ page.youtube_id }}" frameborder="0" allowfullscreen></iframe>
 </div>
+
+{% include date.html %}
+
 <div class="info">
 	<div class="about">
 		<h3>Introducción</h3>
@@ -25,7 +28,24 @@ layout: default
 	{% if page.slides %}
 	<div class="slides">
 		<h3>Slides</h3>
-		<script async class="speakerdeck-embed" data-id="{{ page.slides }}" data-ratio="1.3333333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+		<script async class="speakerdeck-embed" data-id="{{ page.slides }}" data-ratio="1.3333333333333333" src="//speakerdeck.com/assets/embed.js" async="true"></script>
 	</div>
 	{% endif %}
+</div>
+<div class="disqus_wrapper">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'jshangouts'; // required: replace example with your forum shortname
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
 </div>

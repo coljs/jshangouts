@@ -4,8 +4,7 @@ title: JS para Gráficos y Visualización de Datos
 feat: Nicolás García Belmonte
 date: 2012-09-22
 time: "16:30 (BOG GMT-5)"
-permalink: JS-para-graficos-y-visualizacion-de-datos-feat-Nicolas-Carcia.html
-categories: [data-visualization, twitter, philogl]
+categories: [data_visualization, twitter, philogl]
 description: "En este hangout, Nicolás presentará las tecnologías Web que usa y cómo las combina para crear visualizaciones de datos. Hablará sobre tecnologías como el 2D Canvas, WebGL, ES5, XHR2 y otras. También presentará dos librerías de las que es autor: el JavaScript InfoVis Toolkit y PhiloGL."
 bio: Nicolás trabaja como Data Visualization Scientist en Twitter y es el creador de populares librerías de visualización de datos como PhiloGL y Javascript InfoVis Toolkit.
 youtube_id: 2HS_f9Maj28

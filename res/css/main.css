@@ -95,31 +95,45 @@ body {
   color: #eee;
 }
 
-/* line 10, src/_default.scss */
+/* line 11, src/_default.scss */
+body.dark {
+  color: #eee;
+}
+/* line 13, src/_default.scss */
+body.dark p {
+  color: #eee;
+}
+
+/* line 18, src/_default.scss */
+a {
+  color: #20a8dd;
+}
+
+/* line 22, src/_default.scss */
 .centered {
   max-width: 900px;
   margin: auto;
 }
 
-/* line 15, src/_default.scss */
+/* line 27, src/_default.scss */
 .icon {
   font-family: "icon";
 }
 
-/* line 19, src/_default.scss */
+/* line 31, src/_default.scss */
 header {
   padding: 3em 0 0.1em;
   text-align: center;
 }
-/* line 23, src/_default.scss */
+/* line 35, src/_default.scss */
 header a {
   text-decoration: none;
 }
-/* line 26, src/_default.scss */
+/* line 38, src/_default.scss */
 header hgroup {
   font-size: 9em;
 }
-/* line 29, src/_default.scss */
+/* line 41, src/_default.scss */
 header h1 {
   font-family: franchise;
   text-transform: uppercase;
@@ -127,11 +141,11 @@ header h1 {
   color: #eee;
   text-shadow: 3px 0px #979797;
 }
-/* line 37, src/_default.scss */
+/* line 49, src/_default.scss */
 header h1 .gray {
   color: #888888;
 }
-/* line 41, src/_default.scss */
+/* line 53, src/_default.scss */
 header h2 {
   font-family: Coda;
   color: #999;
@@ -140,25 +154,25 @@ header h2 {
   margin: -0.2em 0 0.9em;
   -webkit-transition: text-shadow 400ms;
 }
-/* line 51, src/_default.scss */
+/* line 63, src/_default.scss */
 header h2:hover {
   -webkit-transition: text-shadow 400ms;
 }
 
-/* line 57, src/_default.scss */
+/* line 69, src/_default.scss */
 .non-semantic-protector {
   position: relative;
   z-index: 1;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 3px 5px);
 }
 
-/* line 62, src/_default.scss */
+/* line 74, src/_default.scss */
 .ribbon {
   font-size: 2.1em;
   font-family: Coda;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-  width: 700px;
+  max-width: 700px;
   position: relative;
   -webkit-box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.15), inset -20px 0 15px -15px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.15), inset -20px 0 15px -15px rgba(0, 0, 0, 0.15);
@@ -174,20 +188,20 @@ header h2:hover {
   margin: 1.5em auto 0;
   /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
-/* line 80, src/_default.scss */
+/* line 92, src/_default.scss */
 .ribbon .title {
   text-transform: uppercase;
 }
-/* line 83, src/_default.scss */
+/* line 95, src/_default.scss */
 .ribbon .icon {
   margin-right: 0.5em;
 }
-/* line 86, src/_default.scss */
+/* line 98, src/_default.scss */
 .ribbon a {
   color: white;
   text-decoration: none;
 }
-/* line 91, src/_default.scss */
+/* line 103, src/_default.scss */
 .ribbon:before, .ribbon:after {
   content: "";
   position: absolute;
@@ -196,19 +210,19 @@ header h2:hover {
   border: 0.9em solid #7f1a1a;
   z-index: -2;
 }
-/* line 100, src/_default.scss */
+/* line 112, src/_default.scss */
 .ribbon:before {
   left: -1.8em;
   border-right-width: 1.5em;
   border-left-color: transparent;
 }
-/* line 105, src/_default.scss */
+/* line 117, src/_default.scss */
 .ribbon:after {
   right: -1.8em;
   border-left-width: 1.5em;
   border-right-color: transparent;
 }
-/* line 110, src/_default.scss */
+/* line 122, src/_default.scss */
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
   content: "";
   position: absolute;
@@ -218,18 +232,18 @@ header h2:hover {
   bottom: -0.6em;
   z-index: -1;
 }
-/* line 119, src/_default.scss */
+/* line 131, src/_default.scss */
 .ribbon .ribbon-content:before {
   left: -0.02em;
   border-width: 0.6em 0 0 0.6em;
 }
-/* line 123, src/_default.scss */
+/* line 135, src/_default.scss */
 .ribbon .ribbon-content:after {
   right: -0.02em;
   border-width: 0.6em 0.6em 0 0;
 }
 
-/* line 129, src/_default.scss */
+/* line 141, src/_default.scss */
 .live {
   background-color: #eeb80f;
   background-image: -webkit-radial-gradient(#eeb80f, #b0880b);
@@ -240,38 +254,44 @@ header h2:hover {
   box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.15), inset -20px 0 15px -15px rgba(0, 0, 0, 0.15);
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.4);
 }
-/* line 137, src/_default.scss */
+/* line 149, src/_default.scss */
 .live .icon {
   color: #be2727;
   text-shadow: 0 0 5px maroon;
   font-size: 0.8em;
 }
-/* line 142, src/_default.scss */
+/* line 154, src/_default.scss */
 .live:before, .live:after {
   border-color: #a6800a;
 }
-/* line 146, src/_default.scss */
+/* line 158, src/_default.scss */
 .live:before {
   border-left-color: transparent;
 }
-/* line 149, src/_default.scss */
+/* line 161, src/_default.scss */
 .live:after {
   border-right-color: transparent;
 }
-/* line 152, src/_default.scss */
+/* line 164, src/_default.scss */
 .live .ribbon-content:before, .live .ribbon-content:after {
   border-color: #965f00 transparent transparent transparent;
 }
 
-/* line 157, src/_default.scss */
+/* line 169, src/_default.scss */
 .hangout {
   background: black;
-  width: 760px;
+  max-width: 760px;
   margin: auto;
   min-height: 400px;
+  position: relative;
+  z-index: 2;
+}
+/* line 177, src/_default.scss */
+.hangout iframe {
+  width: 100% !important;
 }
 
-/* line 164, src/_default.scss */
+/* line 182, src/_default.scss */
 .comming_soon {
   max-width: 760px;
   margin: auto;
@@ -289,7 +309,7 @@ header h2:hover {
   border-radius: 0 0 7px 7px;
   text-shadow: 0px 0px 8px black, 0px 0px 3px black;
 }
-/* line 177, src/_default.scss */
+/* line 195, src/_default.scss */
 .comming_soon .inner {
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.4);
@@ -302,26 +322,26 @@ header h2:hover {
   -o-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
 }
-/* line 185, src/_default.scss */
+/* line 203, src/_default.scss */
 .comming_soon h2 {
   font-weight: bold;
   font-size: 0.7em;
   line-height: 1.2em;
 }
-/* line 190, src/_default.scss */
+/* line 208, src/_default.scss */
 .comming_soon .feat {
   font-family: Great Vibes;
   text-transform: lowercase;
   font-size: 0.7em;
   margin: 0.5em 0;
 }
-/* line 196, src/_default.scss */
+/* line 214, src/_default.scss */
 .comming_soon h3 {
   font-size: 0.8em;
   font-family: Great Vibes;
   text-transform: capitalize;
 }
-/* line 201, src/_default.scss */
+/* line 219, src/_default.scss */
 .comming_soon .date {
   font-family: Droid Sans, sans-serif;
   font-size: 17px;
@@ -329,7 +349,7 @@ header h2:hover {
   font-weight: 300;
 }
 
-/* line 210, src/_default.scss */
+/* line 228, src/_default.scss */
 .info {
   max-width: 760px;
   margin: auto;
@@ -339,44 +359,59 @@ header h2:hover {
   overflow: hidden;
   padding-bottom: 4.5em;
 }
-/* line 219, src/_default.scss */
+/* line 237, src/_default.scss */
 .info .about, .info .featuring {
   float: left;
   width: 45%;
   margin: 0 2.5%;
 }
-/* line 224, src/_default.scss */
+/* line 242, src/_default.scss */
 .info h3 {
   font-family: Coda;
   font-size: 1.5em;
-  color: #999;
+  color: #bbb;
   margin-bottom: 0.7em;
 }
-/* line 231, src/_default.scss */
+/* line 249, src/_default.scss */
 .info p {
   line-height: 1.2em;
-  color: #999;
+  color: #bbb;
 }
-/* line 235, src/_default.scss */
+/* line 253, src/_default.scss */
 .info .slides {
   clear: both;
   margin: 0 2.5%;
   padding-top: 4em;
 }
 
-/* line 242, src/_default.scss */
+/* line 259, src/_default.scss */
+.date_post {
+  max-width: 760px;
+  font-style: italic;
+  text-align: right;
+  color: #666;
+  margin: 0.9em auto;
+}
+
+/* line 268, src/_default.scss */
+.disqus_wrapper {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* line 276, src/_default.scss */
 .previous {
   margin: 2em auto 0;
   overflow: hidden;
   text-align: center;
   padding-bottom: 4em;
 }
-/* line 249, src/_default.scss */
+/* line 283, src/_default.scss */
 .previous .ribbon {
   width: 490px;
   margin-bottom: 2em;
 }
-/* line 254, src/_default.scss */
+/* line 288, src/_default.scss */
 .previous h2 {
   text-transform: uppercase;
   font-family: Coda;
@@ -387,17 +422,17 @@ header h2:hover {
   border-right: none;
   padding: 0.6em 0 0.4em;
 }
-/* line 265, src/_default.scss */
+/* line 299, src/_default.scss */
 .previous article {
   float: left;
   width: 33%;
 }
-/* line 269, src/_default.scss */
+/* line 303, src/_default.scss */
 .previous a {
   color: #ddd;
   text-decoration: none;
 }
-/* line 274, src/_default.scss */
+/* line 308, src/_default.scss */
 .previous a:hover h3 {
   color: #bbb;
   -webkit-transition: color 300ms;
@@ -405,7 +440,7 @@ header h2:hover {
   -o-transition: color 300ms;
   transition: color 300ms;
 }
-/* line 278, src/_default.scss */
+/* line 312, src/_default.scss */
 .previous a:hover .date {
   color: #999;
   -webkit-transition: color 300ms;
@@ -413,7 +448,7 @@ header h2:hover {
   -o-transition: color 300ms;
   transition: color 300ms;
 }
-/* line 282, src/_default.scss */
+/* line 316, src/_default.scss */
 .previous a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -422,13 +457,13 @@ header h2:hover {
   -o-transition: opacity 300ms;
   transition: opacity 300ms;
 }
-/* line 288, src/_default.scss */
+/* line 322, src/_default.scss */
 .previous img, .previous h3 {
   width: 80%;
   margin: auto;
   height: auto;
 }
-/* line 293, src/_default.scss */
+/* line 327, src/_default.scss */
 .previous img {
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
   border: 1px solid #333;
@@ -439,7 +474,7 @@ header h2:hover {
   -o-transition: opacity 300ms;
   transition: opacity 300ms;
 }
-/* line 299, src/_default.scss */
+/* line 333, src/_default.scss */
 .previous h3 {
   margin: 0.4em auto 0.3em;
   line-height: 1.2em;
@@ -449,7 +484,7 @@ header h2:hover {
   -o-transition: color 300ms;
   transition: color 300ms;
 }
-/* line 305, src/_default.scss */
+/* line 339, src/_default.scss */
 .previous .date {
   font-weight: 100;
   font-size: 0.9em;
@@ -461,7 +496,7 @@ header h2:hover {
   transition: color 300ms;
 }
 
-/* line 314, src/_default.scss */
+/* line 348, src/_default.scss */
 #footer {
   text-align: center;
   padding: 2em 0 2.2em;
@@ -472,7 +507,7 @@ header h2:hover {
   margin-top: 3em;
   background: black;
 }
-/* line 324, src/_default.scss */
+/* line 358, src/_default.scss */
 #footer a {
   color: #fff;
   text-decoration: none;
