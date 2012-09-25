@@ -5,4 +5,4 @@
 {% endif %}
 {% assign date = date | date:"%A, %d de %b. de %Y" %}
 {% assign date = date | replace:"Monday","Lunes" | replace:"Tuesday","Martes" | replace: "Wednesday","Miércoles" | replace:"Thursday","Jueves" | replace:"Friday","Viernes" | replace:"Saturday","Sábado" | replace:"Sunday","Domingo" %}
-<div class="date_post">{{ date }}.{{page.date|date:"%a"}}</div>
+<div class="date_post">{{ date }}.{{page.date|date:"%A, %d de %b. de %Y"}}</div>
