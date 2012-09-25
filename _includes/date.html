@@ -3,6 +3,6 @@
 {% else %}
 	{% assign ndate = page.date %}
 {% endif %}
-{% assign nndate=ndate|date:"%A, %d de %b. de %Y"|replace:"Jan","Ene"|replace:"Apr","Abr"|replace:"Aug","Ago"|replace:"Dic","Dec"  %}
-{% assign nnndate=nndate|replace:"Monday","Lunes"|replace:"Tuesday","Martes"|replace: "Wednesday","Miércoles"|replace:"Thursday","Jueves"|replace:"Friday","Viernes"|replace:"Saturday","Sábado"|replace:"Sunday","Domingo" %}
-<div class="date_post">{{ nnndate }}.{{page.date|date:"%A, %d de %b. de %Y"}}</div>
+{% assign nndate = ndate | date:"%A, %d de %b. de %Y" | replace:"Jan","Ene" | replace:"Apr","Abr" | replace:"Aug","Ago" | replace:"Dic","Dec" %}
+{% assign nnndate = nndate | replace:"Monday","Lunes" | replace:"Tuesday","Martes" | replace: "Wednesday","Miércoles" | replace:"Thursday","Jueves" | replace:"Friday","Viernes" | replace:"Saturday","Sábado" | replace:"Sunday","Domingo" %}
+<div class="date_post">{{page.date|date:"%A, %d de %b. de %Y"}}</div>
