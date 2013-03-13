@@ -7,6 +7,7 @@ time: "20:00 (BOG GMT-5)"
 categories: [npm, components, bower, ender, package-managers]
 description: "JavaScript es un lenguaje que ha madurado mucho en los últimos años, y gracias a esto hoy en día existen un sin número de herramientas que podemos usar día a día en nuestras aplicaciones. Para esta charla hablaremos de diferentes herramientas que han surgido en los últimos meses para el manejo y control de paquetes y componentes en JavaScript."
 bio: "Organizadores de ColombiaJS: @buritica, @c4milo, @julian_duque y @davsket."
+draft: true
 # youtube_id: khbun9jb2T8
 # slides: 50835a10f713ac000200a8f4
 ---
